@@ -1,0 +1,30 @@
+@startuml
+class Categoria {
+  - id: int
+  - nome: String
+  - descricao: String
+}
+class Fornecedor {
+  - id: int
+  - nome: String
+  - telefone: String
+  - email: String
+}
+class Produto {
+  - id: int
+  - nome: String
+  - quantidade: int
+  - preco: BigDecimal
+  - categoriaId: int
+  - fornecedorId: int
+}
+class CategoriaDAO
+class FornecedorDAO
+class ProdutoDAO
+Categoria "1" <-- "0..*" Produto
+Fornecedor "1" <-- "0..*" Produto
+CategoriaDAO --> Categoria
+FornecedorDAO --> Fornecedor
+ProdutoDAO --> Produto
+@enduml
+
