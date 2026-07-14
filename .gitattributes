@@ -1,0 +1,9 @@
+# Mantém a estatística de linguagens do repositório focada no código Java.
+*.ps1 linguist-detectable=false
+*.bat linguist-detectable=false
+*.sql linguist-detectable=false
+*.md linguist-detectable=false
+*.puml linguist-detectable=false
+*.xml linguist-detectable=false
+*.classpath linguist-detectable=false
+*.project linguist-detectable=false
