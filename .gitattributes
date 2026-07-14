@@ -7,3 +7,10 @@
 *.xml linguist-detectable=false
 *.classpath linguist-detectable=false
 *.project linguist-detectable=false
+
+# Arquivos auxiliares não fazem parte da implementação Java.
+executar-projeto.ps1 linguist-vendored
+iniciar-projeto.bat linguist-vendored
+banco/** linguist-vendored
+sql/** linguist-vendored
+docs/** linguist-documentation
