@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public final class Conexao {
     private static final String URL = "jdbc:mysql://localhost:3306/duplatrabalho?useSSL=false&serverTimezone=America/Sao_Paulo";
     private static final String USUARIO = "root";
-    private static final String SENHA = "123456";
+    private static final String SENHA = System.getenv().getOrDefault("DUPLATRABALHO_DB_SENHA", "123456");
 
     private Conexao() {
     }
@@ -16,4 +16,3 @@ public final class Conexao {
         return DriverManager.getConnection(URL, USUARIO, SENHA);
     }
 }
-
